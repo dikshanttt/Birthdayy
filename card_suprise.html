@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container center">
+    <img 
+      src="IMG-20250419-WA0012.jpg" 
+      alt="Photo of Ni-Ni Baby" 
+    />
+    <h1>Happy Birthday, Ni-Ni Baby</h1>
+    <p>
+      May your days be rich with wonder, your nights filled with dreams, and your heart always bold.
+      Never forget how much you are loved and cherished and don’t stop dreaming big and always keep on smiling.
+      You are a true blessing to us all, and we are so grateful to have you in our lives.
+    </p>
+  </div>
+
+  <audio id="bgMusic" src="HAPPY Birthday Song, Happy Birthday to You.mp3" autoplay loop></audio>
+
+  <script>
+    const music = document.getElementById('bgMusic');
+    music.play().catch(() => {
+      console.log("Autoplay might be blocked. User interaction needed.");
+    });
+  </script>
+
+</body>
+</html>
