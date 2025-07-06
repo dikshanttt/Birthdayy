@@ -1,0 +1,72 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #1a0e00;
+  color: #f5f3f1;
+  font-family: 'Georgia', serif;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+}
+
+/* Center content */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Headings and text */
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #d7b89e;
+  text-shadow: 0 0 8px #c28e70;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-style: italic;
+  color: #d7c5b7;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+button {
+  background: transparent;
+  border: 2px solid #d7b89e;
+  color: #d7b89e;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px #b17a4a88;
+}
+
+button:hover {
+  background-color: #d7b89e;
+  color: #1a0e00;
+}
+
+/* Image styling */
+img {
+  max-width: 90%;
+  max-height: 300px; /* <-- ADDED: limits the height */
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+  object-fit: cover; /* ensures clean crop if needed */
+}
+
